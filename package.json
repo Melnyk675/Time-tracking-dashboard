@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://Melnyk675.github.io/time-tracking-dashboard/",
-  "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
