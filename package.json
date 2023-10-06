@@ -1,7 +1,6 @@
 {
   "name": "time-tracking-dashboard",
   "version": "1.0.0",
-  "description": "",
   "homepage": "https://Melnyk675.github.io/time-tracking-dashboard/",
   "scripts": {
     "predeploy": "npm run build",
