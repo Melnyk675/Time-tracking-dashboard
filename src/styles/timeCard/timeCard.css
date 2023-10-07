@@ -1,0 +1,70 @@
+.time-card {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 210px;
+  border-radius: 16px;
+}
+.time-card .time-card-icon-section {
+  height: 40px;
+}
+.time-card .time-card-icon-section .time-card-icon {
+  height: 100%;
+  float: right;
+}
+.time-card .card-content {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  height: 100%;
+  padding: 10px 15px 0px 15px;
+  color: hsl(236, 100%, 87%);
+  transition: all 0.5s;
+}
+.time-card .card-content .time-upper-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.time-card .card-content .time-upper-section .ellipsis-icon {
+  width: 20px;
+  height: 5px;
+  cursor: pointer;
+}
+.time-card .card-content .time-lower-section .card-hours {
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+.time-card .card-content .time-lower-section .card-comparison {
+  font-weight: 300;
+}
+.time-card .card-content:hover {
+  background-color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  .time-card {
+    height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .time-card {
+    height: 150px;
+    width: 350px;
+  }
+  .time-card .card-content {
+    padding: 0 15px 0px 15px;
+  }
+  .time-card .card-content .time-lower-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .time-card .card-content .time-lower-section .card-hours {
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=timeCard.css.map */

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(226, 43%, 10%);
+}
+html .App, body .App, #root .App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik";
+}
+html .App #cards-container, body .App #cards-container, #root .App #cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 450px;
+  width: 1020px;
+}
+html .App #cards-container #time-cards-container, body .App #cards-container #time-cards-container, #root .App #cards-container #time-cards-container {
+  display: grid;
+  width: 76%;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "one | two | three" "four | five | six";
+}
+html .App #cards-container #time-cards-container #card-1, body .App #cards-container #time-cards-container #card-1, #root .App #cards-container #time-cards-container #card-1 {
+  grid-area: "one";
+  background-color: hsl(15, 100%, 70%);
+}
+html .App #cards-container #time-cards-container #card-2, body .App #cards-container #time-cards-container #card-2, #root .App #cards-container #time-cards-container #card-2 {
+  grid-area: "two";
+  background-color: hsl(195, 74%, 62%);
+}
+html .App #cards-container #time-cards-container #card-3, body .App #cards-container #time-cards-container #card-3, #root .App #cards-container #time-cards-container #card-3 {
+  grid-area: "three";
+  background-color: hsl(348, 100%, 68%);
+}
+html .App #cards-container #time-cards-container #card-4, body .App #cards-container #time-cards-container #card-4, #root .App #cards-container #time-cards-container #card-4 {
+  grid-area: "four";
+  background-color: hsl(145, 58%, 55%);
+  align-self: flex-end;
+}
+html .App #cards-container #time-cards-container #card-5, body .App #cards-container #time-cards-container #card-5, #root .App #cards-container #time-cards-container #card-5 {
+  grid-area: "five";
+  background-color: hsl(264, 64%, 52%);
+  align-self: flex-end;
+}
+html .App #cards-container #time-cards-container #card-6, body .App #cards-container #time-cards-container #card-6, #root .App #cards-container #time-cards-container #card-6 {
+  grid-area: "six";
+  background-color: hsl(43, 84%, 65%);
+  align-self: flex-end;
+}
+@media (max-width: 1050px) {
+  html .App #cards-container, body .App #cards-container, #root .App #cards-container {
+    flex-direction: column;
+    height: 620px;
+    width: 780px;
+  }
+  html .App #cards-container #user-card-container, body .App #cards-container #user-card-container, #root .App #cards-container #user-card-container {
+    height: 28%;
+  }
+  html .App #cards-container #time-cards-container, body .App #cards-container #time-cards-container, #root .App #cards-container #time-cards-container {
+    width: 100%;
+    height: 72%;
+  }
+  html .App #cards-container #time-cards-container #card-1, body .App #cards-container #time-cards-container #card-1, #root .App #cards-container #time-cards-container #card-1 {
+    align-self: flex-end;
+  }
+  html .App #cards-container #time-cards-container #card-2, body .App #cards-container #time-cards-container #card-2, #root .App #cards-container #time-cards-container #card-2 {
+    justify-self: center;
+    align-self: flex-end;
+  }
+  html .App #cards-container #time-cards-container #card-3, body .App #cards-container #time-cards-container #card-3, #root .App #cards-container #time-cards-container #card-3 {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+  html .App #cards-container #time-cards-container #card-5, body .App #cards-container #time-cards-container #card-5, #root .App #cards-container #time-cards-container #card-5 {
+    justify-self: center;
+  }
+  html .App #cards-container #time-cards-container #card-6, body .App #cards-container #time-cards-container #card-6, #root .App #cards-container #time-cards-container #card-6 {
+    justify-self: flex-end;
+  }
+}
+@media (max-width: 800px) {
+  html .App #cards-container, body .App #cards-container, #root .App #cards-container {
+    width: 510px;
+  }
+  html .App #cards-container #time-cards-container, body .App #cards-container #time-cards-container, #root .App #cards-container #time-cards-container {
+    padding-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "one | two " "three | four" "five | six";
+    row-gap: 20px;
+  }
+  html .App #cards-container #time-cards-container #card-2, html .App #cards-container #time-cards-container #card-4, html .App #cards-container #time-cards-container #card-6, body .App #cards-container #time-cards-container #card-2, body .App #cards-container #time-cards-container #card-4, body .App #cards-container #time-cards-container #card-6, #root .App #cards-container #time-cards-container #card-2, #root .App #cards-container #time-cards-container #card-4, #root .App #cards-container #time-cards-container #card-6 {
+    justify-self: flex-end;
+  }
+  html .App #cards-container #time-cards-container #card-3, html .App #cards-container #time-cards-container #card-5, body .App #cards-container #time-cards-container #card-3, body .App #cards-container #time-cards-container #card-5, #root .App #cards-container #time-cards-container #card-3, #root .App #cards-container #time-cards-container #card-5 {
+    justify-self: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  html .App, body .App, #root .App {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  html .App #cards-container, body .App #cards-container, #root .App #cards-container {
+    width: 350px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px 0 40px 0;
+  }
+  html .App #cards-container #time-cards-container, body .App #cards-container #time-cards-container, #root .App #cards-container #time-cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=pageStyle.css.map */

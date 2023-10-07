@@ -1,0 +1,69 @@
+#user-card {
+  width: 220px;
+  height: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+#user-card #card-upper-section {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+  height: 65%;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: hsl(236, 100%, 87%);
+}
+#user-card #card-upper-section #user-icon {
+  width: 80px;
+  margin-bottom: 30px;
+  border: 3px solid hsl(236, 100%, 87%);
+  border-radius: 50%;
+}
+#user-card #card-upper-section #user-report {
+  font-size: 16px;
+  font-weight: 300;
+}
+#user-card #card-upper-section #user-report #user-name {
+  font-size: 38px;
+  font-weight: 400;
+  display: block;
+}
+#user-card #card-lower-section {
+  padding-left: 20px;
+  color: hsl(246, 80%, 60%);
+  font-weight: 300;
+}
+#user-card #card-lower-section #daily, #user-card #card-lower-section #weekly, #user-card #card-lower-section #monthly {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  #user-card {
+    width: 100%;
+    height: 90%;
+    margin-top: 10px;
+  }
+  #user-card #card-upper-section {
+    display: flex;
+    flex-direction: row;
+    height: 55%;
+    align-items: center;
+  }
+  #user-card #card-upper-section #user-icon {
+    width: 55px;
+    margin-right: 40px;
+  }
+  #user-card #card-lower-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 600px) {
+  #user-card #card-upper-section {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  #user-card #card-upper-section #user-report #user-name {
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=userCard.css.map */
