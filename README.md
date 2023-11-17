@@ -8,8 +8,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Melnyk675/Time-tracking-dashboard)
-- Live Site URL: [Live Site](https://Melnyk675.github.io/Time-tracking-dashboard/)
+- Solution URL: [https://github.com/Melnyk675/Time-tracking-dashboard]
+- Live Site URL: [https://Melnyk675.github.io/Time-tracking-dashboard/]
 
 
 ### Built with
