@@ -9,7 +9,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Melnyk675/Time-tracking-dashboard]
-- Live Site URL: [https://Melnyk675.github.io/Time-tracking-dashboard/]
+- Live Site URL: [https://melnyk675.github.io/Time-tracking-dashboard/]
 
 
 ### Built with
